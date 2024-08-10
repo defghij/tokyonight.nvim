@@ -26,6 +26,9 @@ function M.get(c)
     BufferCurrentSign     = { bg = c.bg, fg = c.bg },
     BufferCurrentTarget   = { bg = c.bg, fg = c.red },
     BufferCurrentWARN     = { bg = c.bg, fg = c.warning },
+    BufferCurrentADDED    = { bg = c.bg, fg = c.info },
+    BufferCurrentCHANGED  = { bg = c.bg, fg = c.warning },
+    BufferCurrentDELETED  = { bg = c.bg, fg = c.error },
     BufferInactive        = { bg = Util.blend_bg(c.bg_highlight, 0.4), fg = Util.blend_bg(c.dark5, 0.8) },
     BufferInactiveERROR   = { bg = Util.blend_bg(c.bg_highlight, 0.4), fg = Util.blend_bg(c.error, 0.8) },
     BufferInactiveHINT    = { bg = Util.blend_bg(c.bg_highlight, 0.4), fg = Util.blend_bg(c.hint, 0.8) },
@@ -35,6 +38,9 @@ function M.get(c)
     BufferInactiveSign    = { bg = Util.blend_bg(c.bg_highlight, 0.4), fg = c.bg },
     BufferInactiveTarget  = { bg = Util.blend_bg(c.bg_highlight, 0.4), fg = c.red },
     BufferInactiveWARN    = { bg = Util.blend_bg(c.bg_highlight, 0.4), fg = Util.blend_bg(c.warning, 0.8) },
+    BufferInactiveADDED   = { bg = Util.blend_bg(c.bg_highlight, 0.4), fg = Util.blend_bg(c.info, 0.8) },
+    BufferInactiveCHANGED = { bg = Util.blend_bg(c.bg_highlight, 0.4), fg = Util.blend_bg(c.warning, 0.8) },
+    BufferInactiveDELETED = { bg = Util.blend_bg(c.bg_highlight, 0.4), fg = Util.blend_bg(c.error, 0.8) },
     BufferOffset          = { bg = c.bg_statusline, fg = c.dark5 },
     BufferTabpageFill     = { bg = Util.blend_bg(c.bg_highlight, 0.8), fg = c.dark5 },
     BufferTabpages        = { bg = c.bg_statusline, fg = c.none },
@@ -47,6 +53,9 @@ function M.get(c)
     BufferVisibleSign     = { bg = c.bg_statusline, fg = c.info },
     BufferVisibleTarget   = { bg = c.bg_statusline, fg = c.red },
     BufferVisibleWARN     = { bg = c.bg_statusline, fg = c.warning },
+    BufferVisibleADDED    = { bg = c.bg_statusline, fg = c.info },
+    BufferVisibleCHANGED  = { bg = c.bg_statusline, fg = c.warning },
+    BufferVisibleDELETED  = { bg = c.bg_statusline, fg = c.error },
   }
 end
 
